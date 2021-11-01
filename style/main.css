@@ -1,0 +1,509 @@
+/*----- SELECTORES GENERALES -----*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+footer {
+    background-color: #00AAB5;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    width: 961px;
+}
+
+/*----- SELECTORES PERSONALIZADOS - NAV -----*/
+
+.nav-container{
+    height: 138px;
+    background-color: #00AAB5;    
+    padding: 0px 20px 0px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-item{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+header nav div ul li:nth-child(1) {
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.nav-push{
+    margin-left: auto;
+}   
+
+/*----- SELECTORES GENERALES PERSONALIZADOS - SECTION - DETAIL-----*/
+
+.section-detail-container{
+    width: 100%;
+    height: 424px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-detail-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20%;
+}
+
+.section-detail-detail{    
+    display: flex;
+    flex-direction: column;  
+    height: 80%;
+    justify-content: center;
+}
+
+/*----- SELECTORES PERSONALIZADOS - MAIN - SECTION - IMAGE -----*/
+
+.section-image-container{
+    height: 525px;
+    position: relative;
+}
+
+.section-image-container img {
+    height: 100%;
+    width: 100%;
+    background-image: url("../image/person.png") ;
+    background-repeat: no-repeat;
+    background-position: center;	    
+    background-size: cover;
+    object-fit: cover;    
+}
+
+.section-imagen-container-title {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-image-title{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 700;    
+    color: #fff;
+    padding-top: 40px;
+}
+
+.section-imagen-container-name {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #7299FE;
+    opacity: 0.5;
+    top: 55%;
+    left: 4%;
+}
+
+.section-imagen-name {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*----- SELECTORES PERSONALIZADOS - MAIN - SECTION - DETAIL - SKILL -----*/
+
+.section-skill{
+    background-color: #7299FE;    
+}
+
+.section-skill-titulo{
+    color: #B508A3;    
+    font-size: 36px;    
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.skill-container {
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.skill-container-g {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    text-align: start;  
+    width: 40%;
+    padding: 10px;
+    row-gap: 5px;
+}
+
+.skill-container-g p{
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.skill-container-barra {
+    position: relative;
+    width: 100%;
+    height: 15px;    
+    background-color: #fff;
+}
+
+.skill-result{   
+    position: absolute;    
+    height: 100%;
+    background-color: #000;
+}
+
+.skill-result-html{
+    width: 80%;
+}
+
+.skill-result-java{
+    width: 60%;
+}
+
+.skill-result-css{
+    width: 50%;
+}
+
+.skill-result-react{
+    width: 30%;
+}
+
+.skill-result-angular{
+    width: 35%;
+}
+
+.skill-result-python{
+    width: 50%;
+}
+
+.skill-result-figma{
+    width: 60%;
+}
+
+.skill-result-node{
+    width: 40%;
+}
+
+/*----- SELECTORES PERSONALIZADOS - MAIN - SECTION - DETAIL - SERVICE -----*/
+
+.section-service{
+    background-color: #FB7171;    
+}
+
+.section-service-titulo{
+    color: #00CC9B;    
+    font-size: 36px;  
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.service-container {
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-container-g {
+    display: flex;
+    flex-direction: column;       
+    text-align: center;     
+    width: 20%;    
+    padding: 25px;
+    row-gap: 20px;
+}
+
+.service-container-g p{
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+    font-weight: bold;
+}
+
+.service-container-g i[class="fas fa-check-circle"]{
+    color: white;
+    font-size: 50px;
+}
+
+/*----- SELECTORES PERSONALIZADOS - MAIN - SECTION - DETAIL - PORTFOLIO -----*/
+
+.section-portafolio{
+    background-color: #FFD233;    
+}
+
+.section-portafolio-titulo{
+    color:#8402A5;    
+    font-size: 36px;  
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.portafolio-container {
+    display:  flex;
+    flex-direction: row;            
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 150px;
+    padding-bottom: 50px;
+    gap: 10px;
+}
+
+.portafolio-imagen{
+    width: 140px;
+    height: 100px;    
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.portafolio-imagen-item-1 {
+    background: url("../image/porta1.png");
+}
+
+.portafolio-imagen-item-2 {
+    background: url("../image/porta2.png");
+}
+
+.portafolio-imagen-item-3 {
+    background: url("../image/porta3.png");
+}
+
+.portafolio-imagen-item-4 {
+    background: url("../image/porta4.png");
+}
+
+.portafolio-imagen-item-5 {
+    background: url("../image/porta5.png");
+}
+
+.portafolio-imagen-item-6 {
+    background: url("../image/porta6.png");
+}
+
+.portafolio-imagen-item-7 {
+    background: url("../image/porta7.png");
+}
+
+.portafolio-imagen-item-8 {
+    background: url("../image/porta8.png");
+}
+
+/*----- SELECTORES PERSONALIZADOS - MAIN - SECTION - DETAIL - CUSTOMER -----*/
+ 
+.section-customer-container{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.section-customer{
+    background-color: #3F4E62;    
+}
+
+.section-customer-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30%;
+}
+
+.section-customer-titulo-item{
+    color:#FF00C7;
+    font-size: 36px;  
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.section-customer-detail{    
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: flex-start;
+}
+
+.customer-container {
+    display:  flex;
+    flex-direction: row;            
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.customer-imagen-item-1 {
+    background: url("../image/customer1.png");
+    width: 200px;
+    height: 80px;    
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;    
+}
+
+.customer-imagen-item-2 {
+    background: url("../image/customer2.png");
+    width: 200px;
+    height: 60px;    
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;    
+}
+
+.customer-imagen-item-3 {
+    background: url("../image/customer3.png");
+    width: 200px;
+    height: 80px;    
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;    
+}
+
+.customer-imagen-item-4 {
+    background: url("../image/customer4.png");
+    width: 200px;
+    height: 80px;     
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;    
+}
+
+/*----- SELECTORES PERSONALIZADOS - MAIN - SECTION - DETAIL - CONTACT -----*/
+
+.section-contact-container{
+    width: 100%;
+    height: 750px;
+}
+
+.section-contact{
+    background-color: #16A085;
+}
+
+.section-contact-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15%;
+}
+
+.section-contact-titulo-item{
+    color: #CEE000;    
+    font-size: 36px;    
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.section-contact-form{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    padding: 20px 50px 20px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-input input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;    
+    font-size: 14px;
+    line-height: 16px;
+    color: #7A7A7A;
+    width: 40%;
+    height: 59px;
+    flex-grow: 1;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #BFBFBF;
+}
+
+.form-input textarea{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;    
+    font-size: 14px;
+    line-height: 16px;
+    color: #7A7A7A;
+    height: 112px;
+    flex-grow: 1;
+    margin: 15px;
+    padding: 15px;
+}
+
+.form-enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.form-enviar button{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #fff;
+    background: #233451;
+    width: 167px;
+    height: 56px;    
+}
+
+/*----- SELECTORES PERSONALIZADOS - FOOTER -----*/
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+    list-style-type: none;
+}
+
+.footer-menu-item{
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
